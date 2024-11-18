@@ -3,3 +3,9 @@ body {
     background-color: #f1f1f1;
     margin: 50px;
 }
+
+.link {
+   color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
