@@ -23,6 +23,7 @@ img {
 
 .spacer {
     flex-grow: 1;
+    min-height: 750px
 }
 
 .center-link {
