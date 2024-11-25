@@ -19,6 +19,17 @@ body {
 img {
     display: block;
     max-width: 100%;
+    border: 8px solid transparent; /* Ensures the border shows fully */
+    border-image-source: linear-gradient(45deg, #ffd700, #ffcc00, #ff9900, #ffd700); /* Gold gradient */
+    border-image-slice: 1; /* Uses the full gradient for the border */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Adds depth to the image */
+    border-radius: 15px; /* Optional: Rounds the corners for a fancy look */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 .spacer {
@@ -36,6 +47,21 @@ img {
 .link {
     text-decoration: none;
     font-size: 1.5em;
-    color: blue;
+    color: white;
+    background: linear-gradient(90deg, #ff0000, #ff7300);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, #ff7300, #ff0000);
+}
+
+.link:active {
+    transform: scale(0.95);
 }
 
